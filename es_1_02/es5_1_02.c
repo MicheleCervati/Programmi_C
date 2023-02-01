@@ -1,7 +1,7 @@
 #include <stdio.h>
 void main()
 {
-    int a = 0, b = 0, c = 0, diff=0, diffpari=0, diffdispari=0, nodiff=0;
+    int a = 0, b = 0, c = 0, diff = 0, diffpari = 0, diffdispari = 0, nodiff = 0;
     do
     {
         printf("inserire il valore di a:\n");
@@ -17,12 +17,8 @@ void main()
             diffpari++;
         else
             diffdispari++;
-    }
-}
-while (a + b < c);
-printf("la differenza tra a e b  è stata nulla %d volte", &nodiff);
-printf("la differenza tra a e b  è stata dispari %d volte", &diffdispari);
-printf("la differenza tra a e b  è stata pari %d volte", &diffpari);
-
-
+    } while (a + b < c);
+    printf("la differenza tra a e b  è stata nulla %d volte", &nodiff);
+    printf("la differenza tra a e b  è stata dispari %d volte", &diffdispari);
+    printf("la differenza tra a e b  è stata pari %d volte", &diffpari);
 }
