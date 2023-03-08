@@ -5,27 +5,29 @@
 
 int main(int argv, char *argc[])
 {
-    char stringa[100];
-    int lunghezzaStringa;
+    char stringa[20];
     char carattere;
-    int nVolte = 0;
+    int frequenza = 0;
+    int i = 0;
 
-    printf("Inserisci la stringa: ");
-    scanf("%s", stringa);
-    printf("inserisci il carattere da contare: ");
-    scanf("%s", carattere);
+    printf("\nInserisci la stringa: ");
+    fgets(stringa, sizeof(stringa), stdin);
+    printf("Inserisci il carattere: ");
+    scanf("%c", &carattere);
 
-    lunghezzaStringa = strlen(stringa);
-
-    for (int i = 0; i < lunghezzaStringa; i++)
+    while (stringa[i] != '\0')
     {
-        if (stringa[i] == carattere)
+        if (carattere == stringa[i])
         {
-            nVolte++;
+            frequenza++;
         }
+        i++;
     }
 
-
-    printf("\nViene ripetuto %d volte\n", nVolte);
-   // printf("\nIl carattere %c viene ripetuto %d nella stringa %s", &carattere, &nVolte, stringa);
+    if (frequenza > 0)
+    {
+        printf("\nLa frequenza e' %d\n\n", frequenza);
+    }else{
+        printf("\nNon è stato trovato il carattere richiesto\n");
+    }
 }
