@@ -7,10 +7,10 @@ Per compilare:
 
 ~/$ ./a.out 
 
-se sono esericizi con argc-argv:
+Se sono esericizi con argc-argv:
 
 ~/$ gcc nomeEsercizio.c
 
 ~/$ ./a.out [parametro1] [parametro2] ...
 
-Gli esercizi realizzati sono soggetti a copyright
+**Gli esercizi realizzati sono soggetti a copyright**
