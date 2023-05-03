@@ -33,5 +33,10 @@ int main(int argc, char *argv)
     printf("\nLa stringa di caratteri speciali e' %s\n", caratteriSpeciali);
     printf("La stringa di caratteri normali e' %s\n\n", caratteriNormali);
 
+
+
+
     return 0;
 }
+
+
