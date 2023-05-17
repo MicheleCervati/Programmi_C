@@ -27,6 +27,49 @@ Vincolo:
 
 */
 
+void InserisciPosizione(int *numeri, int *k){
+    int posizione;
+    int posizioneTemp;
+    do{
+    printf("In che posizione vuoi inserire il nuovo numero (0-%d): \n", *k);
+    scanf("%d", &posizione);
+    }while(posizione < 0 || posizione > *k);
+
+    posizioneTemp = posizione;
+
+    for(int i = posizione; i < (*k)+1; i++){
+        numeri[i] = numeri[posizione+1];
+        
+    }
+    
+    printf("Che numero vuoi inserire: ");
+    int numNuovo;
+    scanf("%d", &numNuovo);
+
+    numeri[posizioneTemp] = numNuovo;
+    (*k)++;
+
+}
+
+void Ricerca(int *numeri, int *k)
+{
+
+    int ricercato;
+    int p = 0;
+
+    printf("Che numero vuoi ricercare: ");
+    scanf("%d", &ricercato);
+
+    for (int i = 0; i < *k && p != 1; i++)
+    {
+        if (numeri[i] == ricercato)
+        {
+            p++;
+            printf("elemento trovato alla posizione %d\n", i);
+        }
+    }
+}
+
 void Elimina(int *numeri, int *k)
 {
     int posizione;
@@ -37,9 +80,9 @@ void Elimina(int *numeri, int *k)
         scanf("%d", &posizione);
     } while (posizione > *k || posizione < 1);
 
-    while (posizione+i < *k)
+    while (posizione + i < *k)
     {
-        numeri[posizione-1] = numeri[posizione + i-1];
+        numeri[posizione - 1] = numeri[posizione + i - 1];
         i++;
     }
     numeri[*k] = 0;
@@ -70,6 +113,7 @@ void InserisciInCoda(int *numeri, int *k)
     scanf("%d", &num);
 
     numeri[(*k) + 1] = num;
+    (*k)++;
 }
 
 void MostraContenuto(int *numeri, int *k)
@@ -150,12 +194,12 @@ int main(int argc, char *argv)
         case 4:
             Elimina(numeri, &k);
             break;
-            // case 5:
-            //     Ricerca();
-            //     break;
-            // case 6:
-            //     InserisciPosizione();
-            //     break;
+        case 5:
+            Ricerca(numeri, &k);
+            break;
+        case 6:
+            InserisciPosizione(numeri, &k);
+            break;
             // case 7:
             //     Inverso();
             //     break;
