@@ -1,0 +1,32 @@
+Indirizzo dell'array numeri: 0x7fffffffda00
+Indirizzo dell'array numeri: 0x7fffffffda00
+Indirizzo di numeri[0]: 0x7fffffffda00
+0x7fffffffda00
+0x7fffffffda04
+0x7fffffffda08
+0x7fffffffda0c
+0x7fffffffda10
+numeri[0]: 0
+numeri[1]: 10
+numeri[2]: 20
+numeri[3]: 30
+numeri[4]: 40
+
+
+
+
+
+
+Indirizzo dell'array numeri: 0x7fffffffd9f0
+Indirizzo dell'array numeri: 0x7fffffffd9f0
+Indirizzo di numeri[0]: 0x7fffffffd9f0
+0x7fffffffd9f0
+0x7fffffffd9f4
+0x7fffffffd9f8
+0x7fffffffd9fc
+0x7fffffffda00
+numeri[0]: 0
+numeri[1]: 10
+numeri[2]: 20
+numeri[3]: 30
+numeri[4]: 40
