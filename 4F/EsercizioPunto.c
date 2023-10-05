@@ -21,13 +21,15 @@ void stampa_punto(Posizione punto)
     printf("Z: %d\n", punto.z);
 }
 
-void punto_modificato(Posizione punto)
+Posizione punto_modificato(Posizione punto)
 {
     Posizione punto2;
     punto2.x = punto.x + 1;
     punto2.y = punto.y + 1;
     punto2.z = punto.z + 1;
-    stampa_punto(punto2);
+    //stampa_punto(punto2);
+
+    return punto2;
 }
 
 int main(int argc, char *argv[])
@@ -38,7 +40,8 @@ int main(int argc, char *argv[])
     pos1.z = 15;
     stampa_punto(pos1);
 
-    punto_modificato(pos1);
+    Posizione punto2 = punto_modificato(pos1);
+    stampa_punto(punto2);
  
 
     return 0;
