@@ -73,4 +73,6 @@ int main(int argc, char *argv[])
 
     printf("\nLa somma dei numeri compresi tra limite1 e limite2 vale %d\n", somma);
 
+
+    return 0;
 }
