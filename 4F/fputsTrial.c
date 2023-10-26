@@ -35,7 +35,7 @@ int main() //definisco la funzione main di tipo intero
     fclose(fileDestinazione);//chiudo il file fileDestinazione
     
     fileDestinazione=fopen("nomi.txt", "r");   //apro il file nomi.txt in lettura e lo assegno alla variabile fileDestinazioine di tipo puntatore a FILE
-	while( fgets(vett, MAX_STR, fileDestinazione) ) //scrivo il contenuto del file nel vettore vett (ripeto fin quando questo non e' uguale a null, quindi fine file)
+	while( fgets(vett, MAX_STR, fileDestinazione) ) //scrivo il contenuto del file nel vettore vett (ripeto fin quando questo non e' uguale a null, quindi fine file), ritorna s quindi appena arriva a fine file ritorna EOF che viene tradotto dal c come false se messo nel while
 		printf("%s", vett); //stampo il vettore
     
     if(fclose(fileDestinazione)==0) //chiudo il file e controllo se la chiusura è andata a buon fine
