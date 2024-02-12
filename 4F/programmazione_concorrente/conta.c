@@ -46,7 +46,7 @@ int main()
     if (p != 0)
     {
         printf("\nsono il padre e il mio PID è %d, mio figlio ha PID %d\n", getpid(), p);
-        while (contaPadre <= 40)
+        while (contaPadre <= 19)
         {
             printf("conta padre: %d\n", contaPadre);
             contaPadre++;
@@ -56,7 +56,7 @@ int main()
     {
 
         printf("\nsono il figlio e il mio PID è %d, mio padre ha PID=%d\n", getpid(), getppid());
-        while (contaFiglio <= 20)
+        while (contaFiglio <= 9)
         {
             printf("conta figlio: %d\n", contaFiglio);
             contaFiglio++;
