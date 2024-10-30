@@ -6,6 +6,7 @@
 #include <errno.h>
 #include <string.h>
 
+
 #define DIM_BUFFER 2048
 
 int main()
@@ -21,10 +22,12 @@ int main()
         exit(1);
     }
 
+
     if (p > 0) // padre che legge
     {
         int fdFIFO = open("ChatFIFO", O_RDONLY);
         char temp[DIM_BUFFER];
+
         do
         {
             if (read(fdFIFO, buffer, sizeof(buffer)) != -1)
